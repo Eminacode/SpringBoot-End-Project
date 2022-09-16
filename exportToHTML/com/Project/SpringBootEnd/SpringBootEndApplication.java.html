@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>SpringBootEndApplication.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000080; font-weight: bold;}
+.s1 { color: #000000;}
+.s2 { color: #008000; font-weight: bold;}
+.s3 { color: #0000ff;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+SpringBootEndApplication.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span>com.example.SpringBootEnd;
+
+<span class="s0">import </span>com.example.SpringBootEnd.Student.Student;
+<span class="s0">import </span>org.springframework.boot.SpringApplication;
+<span class="s0">import </span>org.springframework.boot.autoconfigure.SpringBootApplication;
+<span class="s0">import </span>org.springframework.context.ConfigurableApplicationContext;
+
+<span class="s0">import static </span>org.springframework.boot.SpringApplication.run;
+
+@SpringBootApplication
+<span class="s0">public class </span>SpringBootEndApplication {
+
+	<span class="s0">public static void </span>main(String[] args) {
+
+		ConfigurableApplicationContext applicationContext;
+				applicationContext = SpringApplication.run(SpringBootEndApplication.<span class="s0">class</span>, args);
+		Student student1 = <span class="s0">new </span>Student(<span class="s2">&quot;Emina&quot;</span>, <span class="s2">&quot;emina@gmail.com&quot;</span>, <span class="s3">32</span>);
+		Student student2 = <span class="s0">new </span>Student(<span class="s2">&quot;Bill&quot;</span>, <span class="s2">&quot;bill@gmail.com&quot;</span>, <span class="s3">22</span>);
+
+	}
+
+}
+</pre>
+</body>
+</html>
